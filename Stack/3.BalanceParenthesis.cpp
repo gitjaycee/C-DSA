@@ -14,9 +14,11 @@ using namespace std;
 class BalanceParenthesis {
     private:
         string stack;
+
     public:
         BalanceParenthesis(string val) {
-            for (int i = 0; i < val.length(); i++) {
+
+            for (size_t i = 0; i < val.length(); i++) {
                 if (isOpenBracket(val[i])) {
                     stack.push_back(val[i]);
                 }
